@@ -25,3 +25,12 @@ ul.appendChild(liSec);
 liSec.innerHTML = today.getSeconds();
 container.appendChild(ul);
 
+var testVlaue = Number(liSec.innerHTML);
+
+
+if(typeof testVlaue === 'number'){
+    liSec.append(String(' Number'));
+}
+else{
+    alert(typeof testVlaue);
+}
