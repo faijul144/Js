@@ -1,7 +1,6 @@
 const form = document.getElementById('book-form');
 const container = document.getElementById('container');
-const list = document.getElementById('book_list');
-const row = document.createElement('tr');
+
 
 
 class Book{
@@ -14,6 +13,8 @@ class Book{
 
 class UI{
     addNewBook(book){
+        const list = document.getElementById('book_list');
+        const row = document.createElement('tr');
         row.innerHTML = `
         <td>${book.title}</td>
         <td>${book.auth}</td>
@@ -118,7 +119,7 @@ form.addEventListener('submit',function(e){
 
 // Delete Listener
 
-list.addEventListener('click',function(e){
+document.getElementById('book_list').addEventListener('click',function(e){
 
     const ui = new UI();
     ui.deleteBook(e.target);
