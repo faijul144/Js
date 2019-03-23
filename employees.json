@@ -1,0 +1,20 @@
+[
+    {
+    "id": "1",
+    "name": "Fuad",
+    "company": "BrainerDevs",
+    "phone_no": "01234567891"
+    },
+    {
+    "id": "2",
+    "name": "Ledu",
+    "company": "BrainerDevs",
+    "phone_no": "01234567891"
+    },
+    {
+    "id": "3",
+    "name": "Nilu",
+    "company": "BrainerDevs",
+    "phone_no": "01234567891"
+    }
+]
