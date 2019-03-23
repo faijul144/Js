@@ -1,3 +1,7 @@
+// API = Application Pogramming Interface
+
+// REST = Representational State Transfer
+
 document.querySelector('.get-jokes').addEventListener('click',getjokes);
 
 function getjokes(e){
