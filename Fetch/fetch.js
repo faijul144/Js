@@ -22,15 +22,13 @@ function getText(){
 //Get JSON Data
 function getJson(){
     fetch('test.json')
-    .then(function(res){
-        return res.json()
-    })
-    .then(function(data){
+    .then(res => res.json())
+    .then((data)=>{
         console.log(data);
 
         let output = '';
 
-        data.forEach(function(users){
+        data.forEach((users)=>{
             output+=`<li class="list-group-item">${users.id} : ${users.login}</li>`;
         })
 
@@ -38,9 +36,7 @@ function getJson(){
                 <ul class="list-group">${output}</ul>
         `;
     })
-    .catch(function(err){
-        console.log(err);
-    })
+    .catch((err)=>console.log(err))
 }
 
 //Get External API Data
