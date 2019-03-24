@@ -25,13 +25,13 @@ const data = {
 };
 
 //Create Post
-// http.post('https://jsonplaceholder.typicode.com/posts',data,function(err,posts){
-//         if(err){
-//         console.log(err);
-//         }else{
-//         console.log(posts);
-//         }
-// })
+http.post('https://jsonplaceholder.typicode.com/posts',data,function(err,posts){
+        if(err){
+        console.log(err);
+        }else{
+        console.log(posts);
+        }
+})
 
 // update post
 // http.put('https://jsonplaceholder.typicode.com/posts/1',data,function(err,posts){
@@ -43,10 +43,10 @@ const data = {
 // })
 
 // Delete Post
-http.delete('https://jsonplaceholder.typicode.com/posts/1',function(err,response){
-    if(err){
-    console.log(err);
-    }else{
-    console.log(response);
-    }
-});
+// http.delete('https://jsonplaceholder.typicode.com/posts/1',function(err,response){
+//     if(err){
+//     console.log(err);
+//     }else{
+//     console.log(response);
+//     }
+// });
