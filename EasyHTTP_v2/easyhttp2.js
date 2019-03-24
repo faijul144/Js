@@ -24,7 +24,7 @@ class EasyHTTP {
        return new Promise((resolve, reject) => {
            fetch(url,{
                method : 'POST',
-               header: {
+               headers: {
                    'Content-type' : 'application/json'
                },
                body: JSON.stringify(data)
@@ -37,12 +37,12 @@ class EasyHTTP {
 
    }
 //Make Update Request
-   put(url,data) {
+   put(url, data) {
     // parenthesis needed if their is more than one paramiter
    return new Promise((resolve, reject) => {
        fetch(url,{
            method : 'PUT',
-           header: {
+           headers: {
                'Content-type' : 'application/json'
            },
            body: JSON.stringify(data)
@@ -60,7 +60,7 @@ delete(url) {
    return new Promise((resolve, reject) => {
        fetch(url,{
            method : 'DELETE',
-           header: {
+           headers: {
                'Content-type' : 'application/json'
            }
        })
