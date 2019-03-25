@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Easy HTTP</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap.lumen.min.css">
+    <link rel="stylesheet" href="../fontawesome.min.css">
+    <link rel="stylesheet" href="../solid.min.css">
+    <link rel="stylesheet" href="cus.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-5 col-8 mx-auto bg-info cus-border mt-5 p-4">
+                <h4 class="text-center text-uppercase font-weight-bold mb-3">Calculator</h4>
+                <div class="row">
+                    <div class="col-12 mb-1">
+                        <div class="form-group">
+                            <fieldset disabled="disabled">
+                                <input class="form-control" id="cal_value" type="text" placeholder="Calculate"
+                                    disabled="disabled">
+                            </fieldset>
+                            <input type="text" disabled hidden id="store_first_val">
+                        </div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <button type="button" class="btn btn-primary action" id="reset">C</button>
+                        <button type="button" class="btn btn-secondary inputs">7</button>
+                        <button type="button" class="btn btn-secondary inputs">4</button>
+                        <button type="button" class="btn btn-secondary inputs">1</button>
+                        <button type="button" class="btn btn-primary action" id="history">H</button>
+                    </div>
+                    <div class="col-3 text-center">
+                        <button type="button" class="btn btn-primary action" id="memory">M</button>
+                        <button type="button" class="btn btn-secondary inputs">8</button>
+                        <button type="button" class="btn btn-secondary inputs">5</button>
+                        <button type="button" class="btn btn-secondary inputs">2</button>
+                        <button type="button" class="btn btn-secondary inputs">0</button>
+                    </div>
+                    <div class="col-3 text-center">
+                        <button type="button" class="btn btn-primary action" id="clear"><i class="fas fa-backspace"></i></button>
+                        <button type="button" class="btn btn-secondary inputs">9</button>
+                        <button type="button" class="btn btn-secondary inputs">6</button>
+                        <button type="button" class="btn btn-secondary inputs">3</button>
+                        <button type="button" class="btn btn-secondary inputs">.</button>
+                    </div>
+                    <div class="col-3 text-center">
+                        <button type="button" class="btn btn-primary action" id="divide"><i class="fas fa-divide"></i></button>
+                        <button type="button" class="btn btn-primary action" id="multiply"><i class="fas fa-times"></i></button>
+                        <button type="button" class="btn btn-primary action" id="minus"><i class="fas fa-minus"></i></button>
+                        <button type="button" class="btn btn-primary action" id="plus"><i class="fas fa-plus"></i></button>
+                        <button type="button" class="btn btn-primary action" id="equal"><i class="fas fa-equals"></i></button>
+                    </div>
+                </div>
+                <ul class="list-group mt-3" id="history-list"></ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+    <script src="cal.js" async defer></script>
+    <script src="ui.js" async defer></script>
+    <script src="app.js" async defer></script>
+</body>
+
+</html>
