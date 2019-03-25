@@ -1,6 +1,8 @@
-// Initialise Github Class
-
+// Initialise Github
 const git = new Github;
+
+// Initialise UI
+const ui = new UI;
 
 // Searh Input Field
 const searhUser = document.getElementById('searchUser');
@@ -17,15 +19,17 @@ if(userInput !== ''){
     .then(data => {
         if(data.pro.message === 'Not Found'){
             // show alert
-            // console.log('Not Found')
+            ui.showAlert('User Not Found');
         }
         else{
             // show profile
-            // console.log(data);
+            ui.showPro(data.pro)
+            ui.showRepo(data.repo)
         }
     })
 }else{
     //clear profile
+    ui.clearPro();
 }
 
 })
