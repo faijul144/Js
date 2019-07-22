@@ -1,3 +1,1 @@
-Ajax = Asynchronous Javascript & XML
-
-XHR = XmlHttpRequest (XHR) Obj
+hi there
